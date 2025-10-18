@@ -1,6 +1,6 @@
 /**
  * @note problem 2727
- * 
+ *
  * @param {Object|Array} obj
  * @return {boolean}
  */
