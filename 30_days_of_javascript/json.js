@@ -14,12 +14,10 @@ const isEmpty = (obj) => {
  * @param {number} size
  * @return {Array}
  */
-var chunk = function (arr, size){
-  let array_chunks = [];
-
-  while (arr.length > 0) {
-    array_chunks.push(arr.splice(0, size));
+var chunk = function (arr, size) {
+  const arr_chunks = [];
+  for (let index = 0; index < arr.length; index += size) {
+    arr_chunks.push(arr.slice(index, index + size));
   }
-
-  return array_chunks;
+  return arr_chunks;
 };
